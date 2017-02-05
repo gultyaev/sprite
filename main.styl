@@ -1,0 +1,44 @@
+bg-uri = url('sprite.svg')
+bg-color-blue = #1b89ff
+main-bg-color = bg-color-blue
+.wrapper
+  max-width 960px
+  margin 0 auto
+  min-height 100vh
+  padding 20px
+
+.icon
+  height 20px
+  width 20px
+  display inline-block
+  background-color main-bg-color
+  transition all 0.5s
+  margin-left 20px
+  &:hover
+    transform scale(3)
+  &:first-child
+    margin-left 0
+
+.icon-heart
+  background bg-uri 40px 0
+
+.icon-scissors
+  background bg-uri 60px 0
+
+.icon-footprint
+  background bg-uri
+
+.icon-check
+  background bg-uri 20px 0
+
+name = "Proxima Nove"
+path = "fonts/proxima"
+
+font(fontName, fontPath, fontWeight...)
+  font-face fontName
+  src fontPath
+  font-weight fontWeight
+
+*
+  @font-face
+    font(name, path, 'bold', 'italic')

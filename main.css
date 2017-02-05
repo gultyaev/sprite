@@ -1,0 +1,37 @@
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px;
+}
+.icon {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: #1b89ff;
+  transition: all 0.5s;
+  margin-left: 20px;
+}
+.icon:hover {
+  transform: scale(3);
+}
+.icon:first-child {
+  margin-left: 0;
+}
+.icon-heart {
+  background: url("sprite.svg") 40px 0;
+}
+.icon-scissors {
+  background: url("sprite.svg") 60px 0;
+}
+.icon-footprint {
+  background: url("sprite.svg");
+}
+.icon-check {
+  background: url("sprite.svg") 20px 0;
+}
+@font-face {
+  font-face: "Proxima Nove";
+  src: "fonts/proxima";
+  font-weight: 'bold' 'italic';
+}
